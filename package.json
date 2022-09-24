@@ -1,6 +1,6 @@
 {
   "name": "succus",
-  "version": "0.0.4-release.1.2",
+  "version": "0.0.5",
   "type": "module",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -10,9 +10,10 @@
   "license": "Apache 2.0",
   "homepage": "https://github.com/noctisatrae/succus",
   "scripts": {
-    "prepublish": "tsc && jsdoc2md -f ./dist/index.js > docs/docs.md"
+    "prepublish": "tsc && jsdoc2md -f ./dist/*/*.js > docs/docs.md"
   },
   "devDependencies": {
+    "esbuild": "^0.15.9",
     "typescript": "^4.6.4"
   },
   "dependencies": {
